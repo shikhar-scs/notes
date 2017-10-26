@@ -34,6 +34,7 @@
   "options_ui": {
     "page": "settings/settings.html"
   },
+  "devtools_page": "sidebar/panel.html",
   "commands": {
     "_execute_sidebar_action": {
       "suggested_key": {

@@ -347,6 +347,7 @@ enableSync.onclick = () => {
 function getThemeFromStorage() {
   const getting = browser.storage.local.get(['theme']);
   getting.then(function applyTheme(data) {
+    console.log(data, browser.devtools.panels.themeName);
     if (data.theme === undefined && browser.devtools.panels.themeName === 'dark' ) {
       data.theme = 'dark';
     } else {
