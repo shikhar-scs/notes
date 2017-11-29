@@ -109,6 +109,9 @@ ClassicEditor.create(document.querySelector('#editor'), {
             savingIndicator.textContent = browser.i18n.getMessage('syncProgress');
             break;
           case 'text-editing':
+            if (isAuthenticated) {
+              setAnimation(true); // animateSyncIcon, syncingLayout, warning
+            }
             savingIndicator.textContent = browser.i18n.getMessage('savingChanges');
             // Disable sync-action
             editingInProcess = true;
