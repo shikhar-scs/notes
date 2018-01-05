@@ -75,7 +75,7 @@ function syncNowEnabledCheck() {
   // do not block editor on this getter
   browser.storage.local.get('asked-for-syncing').then((data) => {
     if(data && data['asked-for-syncing']) {
-      noteDiv.classList.toggle('visible');
+      noteDiv.classSyncList.toggle('visible');
       browser.storage.local.remove('asked-for-syncing');
     }
   });
