@@ -42,7 +42,8 @@ function localizeEditorButtons () {
     italic = document.querySelector('button.ck-button:nth-child(3)'),
     strike = document.querySelector('button.ck-button:nth-child(4)'),
     bullet = document.querySelector('button.ck-button:nth-child(5)'),
-    ordered = document.querySelector('button.ck-button:nth-child(6)');
+    ordered = document.querySelector('button.ck-button:nth-child(6)'),
+    charcount = document.querySelector('button.ck-button:nth-child(7)');
 
 // Setting button titles in place of tooltips
   size.title = browser.i18n.getMessage('fontSizeTitle');
@@ -51,6 +52,7 @@ function localizeEditorButtons () {
   strike.title = browser.i18n.getMessage('strikethroughTitle');
   ordered.title = browser.i18n.getMessage('numberedListTitle');
   bullet.title = browser.i18n.getMessage('bulletedListTitle');
+  charcount.title = 'words left';
 }
 
 function getPadStats(editor) {
@@ -61,6 +63,7 @@ function getPadStats(editor) {
     bold: false,
     italic: false,
     strike: false,
+    charcount: false,
     list: false,
     list_bulleted: false,
     list_numbered: false

@@ -9,6 +9,7 @@ import AutoformatPlugin from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import BoldPlugin from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import ItalicPlugin from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import StrikePlugin from './strike';
+import CharCountPlugin from './charcount';
 import CodePlugin from '@ckeditor/ckeditor5-basic-styles/src/code';
 import UnderlinePlugin from '@ckeditor/ckeditor5-basic-styles/src/underline';
 import HeadingPlugin from '@ckeditor/ckeditor5-heading/src/heading';
@@ -25,6 +26,7 @@ ClassicEditor.build = {
     BoldPlugin,
     ItalicPlugin,
     StrikePlugin,
+    CharCountPlugin,
     CodePlugin,
     UnderlinePlugin,
     HeadingPlugin,
@@ -40,6 +42,7 @@ ClassicEditor.build = {
         'bold',
         'italic',
         'strike',
+        'charcount',
         'code'
       ]
     }
